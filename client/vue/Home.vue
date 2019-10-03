@@ -1,17 +1,24 @@
 <template>
   <div>
     <h1>{{ sentence }}</h1>
-    <p>This is Home Page</p>
+    <p></p>
+    <Clock></Clock>
   </div>
 </template>
 
 <script>
+  import Clock from './Clock';
+
   export default {
     name: 'Home',
     data() {
       return {
-        sentence: 'Welcome to Home Page',
+        sentence: '',
       }
+    },
+
+    components: {
+      Clock,
     },
   }
 </script>

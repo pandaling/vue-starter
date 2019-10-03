@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container id="main">
     <navbar></navbar>
     <b-row>
       <b-col>
@@ -20,5 +20,10 @@
   }
 </script>
 
-<style scoped>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss" scoped>
+  #main {
+    background-image: url('../../asset/office_2.jpg');
+    height: 100vh;
+  }
 </style>

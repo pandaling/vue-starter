@@ -1,8 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '../vue/Home';
-import About from '../vue/About';
-import Login from '../vue/Login';
 
 Vue.use(Router);
 
@@ -40,7 +38,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: About,
+    component: () => import('../vue/About'),
     meta: {
       title: 'About',
     },
@@ -48,7 +46,7 @@ const routes = [
   {
     path: '/login',
     name: 'Login',
-    component: Login,
+    component: () => import('../vue/Login'),
     meta: {
       title: 'Login',
     },
